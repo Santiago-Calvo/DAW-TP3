@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Characters</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\Normalize.css">
+</head>
+<body>
+    <header>
+        <h1>Rick and Morty Characters</h1>
+    </header>
+
+    <section class="images">
+        <img src="Images\Morty.png" alt="Morty">
+        <img src="Images\Rick.png" alt="Rick ">
+    </section>
+
+    <section class="controls">
+        <button id="charactersButton">Characters</button>
+        <button id="searchButton">Search</button>
+    </section>
+
+    <section class="search-fields">
+        <form id="searchForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="status">Status:</label>
+            <input type="text" id="status" name="status">
+
+            <label for="species">Species:</label>
+            <input type="text" id="species" name="species">
+
+            <label for="type">Type:</label>
+            <input type="text" id="type" name="type">
+
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender">
+        </form>
+    </section>
+
+    <section class="results">
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Species</th>
+                    <th>Type</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+    <script src="Api.js"></script>
+</body>
+</html>
